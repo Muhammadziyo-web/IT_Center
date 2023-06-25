@@ -6,7 +6,7 @@ const pool = new Pool({
 
 
   connectionString:
-    "postgres://postgres:wsx@localhost:5432/bogbon",
+    "postgres://postgres:wsx@localhost:5432/itcenter",
 });
 
 
