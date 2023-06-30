@@ -18,8 +18,6 @@ app.use("/api", route)
 
 app.use("/image", express.static("src/upload"));
 
-
-
 app.get("/*", (_,res)=>{
     res.status(404).json({message: "Not Found"})
 })
