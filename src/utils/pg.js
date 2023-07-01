@@ -6,7 +6,7 @@ const pool = new Pool({
 
 
   connectionString:
-    "postgres://postgres:wsx@localhost:5432/itcenter",
+    "postgres://postgres:1234@localhost:5432/it_group",
 });
 
 
@@ -37,6 +37,7 @@ const fetch = async (Sql, ...values) => {
     return rows;
   } catch (error) {
     console.log(error.message);
+    return error
   } finally {
     client.release();
   }
